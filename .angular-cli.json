@@ -1,0 +1,74 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "angular-extjs-demo"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "ext-6.5.1",
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "../ext-6.5.1/build/modern/theme-material/resources/theme-material-all.css",
+        "../ext-6.5.1/packages/calendar/build/modern/material/resources/calendar-all.css",
+        "../ext-6.5.1/packages/d3/build/modern/material/resources/d3-all.css",
+        "../ext-6.5.1/packages/exporter/build/modern/resources/exporter-all.css",
+        "../ext-6.5.1/packages/pivot/build/modern/material/resources/pivot-all.css",
+        "../ext-6.5.1/packages/pivot-d3/build/modern/material/resources/pivot-d3-all.css",
+        "styles.css"
+      ],
+      "scripts": [
+        "../ext-6.5.1/build/ext-modern-all-debug.js",
+        "../ext-6.5.1/packages/calendar/build/modern/calendar.js",
+        "../ext-6.5.1/packages/d3/build/modern/d3.js",
+        "../ext-6.5.1/packages/exporter/build/modern/exporter.js",
+        "../ext-6.5.1/packages/pivot/build/modern/pivot.js",
+        "../ext-6.5.1/packages/pivot-d3/build/modern/pivot-d3.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "src/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}
