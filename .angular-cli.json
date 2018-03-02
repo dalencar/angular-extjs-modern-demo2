@@ -8,7 +8,7 @@
       "root": "src",
       "outDir": "dist",
       "assets": [
-        "ext-6.5.1",
+        "extjs/resources",
         "assets",
         "favicon.ico"
       ],
@@ -20,21 +20,12 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "../ext-6.5.1/build/modern/theme-material/resources/theme-material-all.css",
-        "../ext-6.5.1/packages/calendar/build/modern/material/resources/calendar-all.css",
-        "../ext-6.5.1/packages/d3/build/modern/material/resources/d3-all.css",
-        "../ext-6.5.1/packages/exporter/build/modern/resources/exporter-all.css",
-        "../ext-6.5.1/packages/pivot/build/modern/material/resources/pivot-all.css",
-        "../ext-6.5.1/packages/pivot-d3/build/modern/material/resources/pivot-d3-all.css",
+        "extjs/resources/ExpApp-all.css",
         "styles.css"
       ],
       "scripts": [
-        "../ext-6.5.1/build/ext-modern-all-debug.js",
-        "../ext-6.5.1/packages/calendar/build/modern/calendar.js",
-        "../ext-6.5.1/packages/d3/build/modern/d3.js",
-        "../ext-6.5.1/packages/exporter/build/modern/exporter.js",
-        "../ext-6.5.1/packages/pivot/build/modern/pivot.js",
-        "../ext-6.5.1/packages/pivot-d3/build/modern/pivot-d3.js"
+        "bootstrap.js",
+        "extjs/app.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

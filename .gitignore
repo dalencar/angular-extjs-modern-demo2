@@ -5,7 +5,8 @@
 /dist-server
 /tmp
 /out-tsc
-/ext-*
+/src/extjs
+/src/bootstrap.js
 
 # dependencies
 /node_modules
